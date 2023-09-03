@@ -1,0 +1,31 @@
+<JaxTeller718>
+	<insertAfter xpath="/blocks/block[@name='treeGrassMaster']/drop[@event='Harvest']">
+		<drop event="Destroy" name="survivalBerriesRH" count="1,3" prob="0.06"/>
+		<drop event="Destroy" name="survivalNutsRH" count="1,3" prob="0.07"/>
+	</insertAfter>
+	<append xpath="/blocks">
+		<block name="plantedNuts3HarvestRH">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Nuts.unity3d?nutBush"/>
+			<drop event="Harvest" name="survivalNutsRH" count="3,5" tag="wildCropsHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedNuts3HarvestPlayerRH">
+			<property name="Extends" value="plantedNuts3HarvestRH"/>
+			<property name="CustomIcon" value="plantedNuts1RH"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="survivalNutsRH" count="2" tag="cropHarvest"/>
+			<drop event="Destroy" name="plantedNuts1RH" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedBerries3HarvestRH">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Berries.unity3d?berryBush"/>
+			<drop event="Harvest" name="survivalBerriesRH" count="3,5" tag="wildCropsHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+	</append>
+</JaxTeller718>

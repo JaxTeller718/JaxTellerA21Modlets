@@ -1,0 +1,15 @@
+<JaxTeller718>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations">
+		<decoration type="block" blockname="plantedBerries3HarvestRH" prob=".0010"/>
+		<decoration type="block" blockname="plantedNuts3HarvestRH" prob=".0010"/>
+
+	</append>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations">
+		<decoration type="block" blockname="plantedBerries3HarvestRH" prob=".0010"/>
+		<decoration type="block" blockname="plantedNuts3HarvestRH" prob=".0010"/>
+	</append>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/decorations">
+		<decoration type="block" blockname="plantedBerries3HarvestRH" prob=".0010"/>
+		<decoration type="block" blockname="plantedNuts3HarvestRH" prob=".0010"/>
+	</append>
+</JaxTeller718>
