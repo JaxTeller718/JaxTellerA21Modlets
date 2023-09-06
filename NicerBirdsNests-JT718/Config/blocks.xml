@@ -1,0 +1,54 @@
+<JaxTeller718>
+
+	<remove xpath="/blocks/block[@name='cntBirdnest']"/>
+	<insertAfter xpath="/blocks/block[@name='planter']">
+		<block name="cntBirdnest">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="birdNest"/>
+			<property name="IndexName" value="quest_feather"/>
+			<property name="Material" value="Mplants"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_BirdsNest.unity3d?birdsNestRH"/>
+			<property name="CustomIcon" value="birdsNestFullRH"/>
+			<property name="DowngradeBlock" value="birdsNestEmptyRH"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<drop event="Harvest" name="resourceCloth" count="1" prob="0.3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="3" prob="0.35" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="2" prob="0.6" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceYuccaFibers" count="2,8"/>
+			<property name="DestroyFX" value="blockdestroy_plant,nest_destroy"/>
+			<property name="SortOrder1" value="B267"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	</insertAfter>
+	<append xpath="/blocks">
+		<block name="birdsNestEmptyRH">
+			<property name="Material" value="Mplants"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- build restriction -->
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_BirdsNest.unity3d?birdsNestEmptyRH"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceBoneFragmentsRH" count="1,4" prob="0.9" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="3" prob="0.35" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="2" prob="0.6" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceYuccaFibers" count="2,8"/>
+			<property name="DestroyFX" value="blockdestroy_plant,nest_destroy"/>
+			<property name="SortOrder1" value="B267"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	</append>
+</JaxTeller718>
