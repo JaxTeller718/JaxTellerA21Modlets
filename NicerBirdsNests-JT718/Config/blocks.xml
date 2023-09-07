@@ -33,11 +33,11 @@
 			<property name="Material" value="Mplants"/>
 			<property name="StabilitySupport" value="false"/>
 			<!-- build restriction -->
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Model" value="#@modfolder:Resources/JaxTeller718_BirdsNest.unity3d?birdsNestEmptyRH"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="ModelOffset" value="0,0,0"/>
-			<property name="GndAlign" value="1"/>
-			<property name="WaterFlow" value="permitted"/>
 			<property name="OnlySimpleRotations" value="true"/>
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="Collide" value="melee,bullet,arrow,rocket"/>
@@ -45,10 +45,8 @@
 			<drop event="Harvest" name="resourceFeather" count="3" prob="0.35" tag="allHarvest"/>
 			<drop event="Harvest" name="resourceFeather" count="2" prob="0.6" tag="allHarvest"/>
 			<drop event="Destroy" name="resourceYuccaFibers" count="2,8"/>
-			<property name="DestroyFX" value="blockdestroy_plant,nest_destroy"/>
-			<property name="SortOrder1" value="B267"/>
-			<property name="SortOrder2" value="0000"/>
-			<property name="FilterTags" value="MC_building,SC_loot"/>
+			<property name="FilterTags" value="floot,foutdoor"/>
+
 		</block>
 	</append>
 </JaxTeller718>
